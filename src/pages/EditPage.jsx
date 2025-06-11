@@ -17,7 +17,7 @@ function EditPage({ students, setStudents }) {
 
   return (
     <div>
-      <h2 className="text-warning">✏️ Edit Student</h2>
+      <h2 className="text-warning text-center">✏️ Edit Student</h2>
       <StudentForm onSubmit={handleUpdate} initialData={student} />
     </div>
   );

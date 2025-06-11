@@ -9,7 +9,7 @@ function IndexPage({ students, setStudents }) {
 
   return (
     <div>
-      <h2 className="text-primary">📋 Student List</h2>
+      <h2 className="text-primary text-center">📋 Student List</h2>
       <Link to="/create" className="btn btn-success mb-3">➕ Add New Student</Link> 
       <table className="table table-striped table-hover text-center">
         <thead className="table-dark">
@@ -17,7 +17,7 @@ function IndexPage({ students, setStudents }) {
             <th>Name</th>
             <th>Age</th>
             {[...Array(5)].map((_, i) => <th key={i}>M{i + 1}</th>)}
-            <th>%</th>
+            <th>percentage %</th>
             <th>Division</th>
             <th colSpan="2">Actions</th>
           </tr>
