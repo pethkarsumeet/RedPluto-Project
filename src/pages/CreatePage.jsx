@@ -12,7 +12,7 @@ function CreatePage({ students, setStudents }) {
 
   return (
     <div>
-      <h2 className="text-success">➕ Create Student</h2>
+      <h2 className="text-success text-center">➕ Create Student</h2>
       <StudentForm onSubmit={handleCreate} />
     </div>
   );
