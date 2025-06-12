@@ -1,12 +1,50 @@
-# React + Vite
+![image](https://github.com/user-attachments/assets/876b5fec-bc79-46f3-9b36-35271c25f113)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/user-attachments/assets/4579487d-f4ba-467d-90d1-b0fa5811795a)
 
-Currently, two official plugins are available:
+![image](https://github.com/user-attachments/assets/2da39427-cf08-4286-a615-de30178cce2a)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/user-attachments/assets/b950ed03-c162-41a3-9d6c-56f73e1a8b69)
 
-## Expanding the ESLint configuration
+# 🎓 Student Management System (React)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is a simple **CRUD application** built in **React.js** to manage student records.  
+It uses `useState` hooks and arrays only — **no database** — and is styled with **Bootstrap 5**.
+
+---
+
+## 🚀 Features
+
+- ✅ Create, Read, Update, and Delete student records
+- ✅ Store:
+  - Name
+  - Age
+  - Marks for 5 Subjects
+  - Automatically calculate Percentage & Division
+- ✅ Responsive UI using Bootstrap
+- ✅ Alerts for Create, Edit, and Delete (no modals)
+- ✅ Filter student list by **name** and **division**
+- ✅ Pagination (5 students per page)
+
+---
+
+## 📂 Project Structure
+
+```bash
+/src
+│
+├── components/
+│   ├── StudentForm.js     # Reusable form component
+│   ├── CreatePage.js      # Page to create student
+│   ├── EditPage.js        # Page to edit student
+│   ├── DeletePage.js      # Handles deletion with confirmation alert
+│   └── IndexPage.js       # Main list page (table with filters + pagination)
+│
+├── App.js                 # Routing setup
+└── App.css                # Custom styling including responsive table
+
+
+
+
+
+
