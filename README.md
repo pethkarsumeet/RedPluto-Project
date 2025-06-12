@@ -37,12 +37,12 @@ It uses `useState` hooks and arrays only — **no database** — and is styled w
 ├── App.js                 # Routing setup
 └── App.css                # Custom styling including responsive table
 
+![image](https://github.com/user-attachments/assets/4579487d-f4ba-467d-90d1-b0fa5811795a)
 
-![image](https://github.com/user-attachments/assets/dcb5a746-d5d4-44de-a9bd-d4730ebe60f5)
+![image](https://github.com/user-attachments/assets/2da39427-cf08-4286-a615-de30178cce2a)
 
-![image](https://github.com/user-attachments/assets/0d17914e-9eff-4bdf-b4e6-13f102002151)
+![image](https://github.com/user-attachments/assets/b950ed03-c162-41a3-9d6c-56f73e1a8b69)
 
-![image](https://github.com/user-attachments/assets/dd06591e-8a3e-4ff6-852b-4986fd80cd97)
 
 
 
