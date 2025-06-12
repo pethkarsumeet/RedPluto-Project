@@ -1,24 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import StudentForm from '../components/StudentForm';
 
 function EditPage({ students, setStudents }) {
   const { id } = useParams();
   const navigate = useNavigate();
-  const index = parseInt(id);
-  const student = students[index];
+  const studentIndex = parseInt(id);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleUpdate = (updatedStudent) => {
-    const updatedList = [...students];
-    updatedList[index] = updatedStudent;
+    const updatedList = students.map((stu, i) =>
+      i === studentIndex ? updatedStudent : stu
+    );
     setStudents(updatedList);
-    navigate('/');
+    setShowSuccess(true);
   };
 
+  useEffect(() => {
+    if (showSuccess) {
+      const timer = setTimeout(() => {
+        setShowSuccess(false);
+        navigate('/');
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [showSuccess, navigate]);
+
   return (
-    <div>
-      <h2 className="text-warning text-center">✏️  Edit Student</h2>
-      <StudentForm onSubmit={handleUpdate} initialData={student} />
+    <div className="container mt-4">
+      <h2 className="mb-3">✏️ Edit Student</h2>
+      <StudentForm initialData={students[studentIndex]} onSubmit={handleUpdate} />
+
+      {showSuccess && (
+        <div className="alert alert-info mt-3">
+          🔁 Student updated successfully!
+        </div>
+      )}
     </div>
   );
 }
