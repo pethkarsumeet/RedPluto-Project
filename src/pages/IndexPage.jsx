@@ -26,7 +26,7 @@ function IndexPage({ students, setStudents }) {
     const divisionMatch = divisionFilter ? stu.division === divisionFilter : true;
     return nameMatch && divisionMatch;
   });
-
+ 
   // Pagination logic
   const totalPages = Math.ceil(filteredStudents.length / studentsPerPage);
   const indexOfLastStudent = currentPage * studentsPerPage;
